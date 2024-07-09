@@ -1,0 +1,164 @@
+/* style.css */
+
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	background-image: url('images/tropicalBackground2.jpg'); /* Add your background image here */
+	background-size: cover; /* Ensures the background covers the entire screen */
+	background-position: center; /* Centers the background image */
+	background-repeat: no-repeat; /* Prevents the background from repeating */
+	color: #333;
+}
+
+header {
+	background-color: rgba(45, 106, 79, 0.8); /* Dark green background with transparency */
+	color: #fff;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+	header h1 {
+		margin-bottom: 0.5rem;
+	}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+	nav ul li {
+		margin: 0 15px;
+	}
+
+		nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+
+			nav ul li a:hover {
+				color: #f4f4f4;
+			}
+
+main {
+	padding: 4rem;
+	background-color: rgba(233, 255, 255, 0.8); /* Light background with transparency for readability */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 2rem;
+}
+
+/* Sections */
+section {
+	margin-bottom: 2rem;
+}
+
+#home {
+	text-align: center;
+}
+
+.sculpture {
+	margin-bottom: 30rem;
+	padding: 2rem;
+	background-color: rgba(244, 244, 244, 0.9); /* Light background for separation with transparency */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+figure {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 0;
+	width: 100%;
+}
+
+	figure img {
+		width: 30%; /* Consistent width for all images */
+		height: auto;
+		border-radius: 5px;
+		margin-bottom: 1rem;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+
+		figure img:hover {
+			transform: scale(1.05);
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		}
+
+.sculpture:last-child figure {
+	display: flex;
+	justify-content: center;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+	margin-top: 1rem;
+	color: #666;
+}
+
+/* Biography Section */
+#biography {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.9); /* Background with transparency for readability */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+	background-color: rgba(45, 106, 79, 0.8); /* Dark green background with transparency */
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: column;
+	}
+
+		nav ul li {
+			margin: 5px 0;
+		}
+
+	figure img {
+		width: 90%; /* Adjust width for mobile */
+	}
+
+	.sculpture {
+		margin-bottom: 1rem;
+	}
+
+	main {
+		padding: 1rem;
+		margin: 1rem;
+	}
+
+	#biography {
+		padding: 1rem;
+	}
+}

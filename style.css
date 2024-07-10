@@ -73,7 +73,7 @@ section {
 }
 
 .sculpture {
-	margin-bottom: 30rem; /* Adjust this value as needed */
+	margin-bottom: 3rem; /* Adjust this value as needed */
 	padding: 2rem;
 	background-color: rgba(244, 244, 244, 0.9); /* Light background for separation with transparency */
 	border-radius: 8px;
@@ -112,7 +112,7 @@ figure {
 .sculpture:last-child figure {
 	display: flex;
 	justify-content: center;
-	flex-direction: column; /* Ensure figcaption is below the image */
+	flex-direction: row; /* Ensure figcaption is below the image */
 }
 
 figcaption {
@@ -121,6 +121,7 @@ figcaption {
 	margin-top: 1rem;
 	color: #666;
 }
+
 
 /* Biography Section */
 #biography {
@@ -140,8 +141,9 @@ footer {
 	text-align: center;
 	padding: 1rem 0;
 	position: fixed;
-	width: 100%;
+	width: 20%;
 	bottom: 0;
+	
 }
 
 /* Media Queries */

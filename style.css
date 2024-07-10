@@ -26,6 +26,7 @@ header {
 }
 
 	header h1 {
+		font-size: 100px;
 		margin-bottom: 0.5rem;
 	}
 
@@ -52,6 +53,9 @@ nav ul {
 			}
 
 main {
+	background-image: url('images/redClover2.png');
+	background-size: cover; /* Ensures the background covers the entire screen */
+	background-position: center; /* Centers the background image */
 	padding: 4rem;
 	background-color: rgba(233, 255, 255, 0.8); /* Light background with transparency for readability */
 	border-radius: 8px;
@@ -69,7 +73,7 @@ section {
 }
 
 .sculpture {
-	margin-bottom: 30rem;
+	margin-bottom: 30rem; /* Adjust this value as needed */
 	padding: 2rem;
 	background-color: rgba(244, 244, 244, 0.9); /* Light background for separation with transparency */
 	border-radius: 8px;
@@ -81,6 +85,8 @@ section {
 
 figure {
 	display: flex;
+	padding: 2rem;
+	align-content: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin: 0;
@@ -90,6 +96,7 @@ figure {
 	figure img {
 		width: 30%; /* Consistent width for all images */
 		height: auto;
+		opacity: 0.85;
 		border-radius: 5px;
 		margin-bottom: 1rem;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -97,13 +104,15 @@ figure {
 	}
 
 		figure img:hover {
-			transform: scale(1.05);
+			opacity: 100%;
+			transform: scale(1.08);
 			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 		}
 
 .sculpture:last-child figure {
 	display: flex;
 	justify-content: center;
+	flex-direction: column; /* Ensure figcaption is below the image */
 }
 
 figcaption {
@@ -146,7 +155,8 @@ footer {
 		}
 
 	figure img {
-		width: 90%; /* Adjust width for mobile */
+		height: auto; /* Adjust height for mobile */
+		width: auto; /* Adjust width for mobile */
 	}
 
 	.sculpture {

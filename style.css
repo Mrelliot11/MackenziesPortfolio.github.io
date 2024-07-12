@@ -163,6 +163,16 @@ figcaption {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#biography img {
+	display: block;
+	margin: 0 auto 1rem auto; /* Centers the image and adds margin at the bottom */
+	max-width: 50%; /* Adjust the percentage as needed for size */
+	height: auto; /* Maintains the aspect ratio */
+	border-radius: 8px; /* Optional: Adds rounded corners to the image */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visual separation */
+	filter: brightness(0.8) contrast(1.0); /* Adjust brightness and contrast to make image darker */
+	}
+
 /* Contact Section */
 #contact {
 	max-width: 600px;

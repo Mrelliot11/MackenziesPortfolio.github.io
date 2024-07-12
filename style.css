@@ -163,6 +163,19 @@ figcaption {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Contact Section */
+#contact {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.9); /* Background with transparency for readability */
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer */
 footer {
 	background-color: rgba(45, 106, 79, 0.8); /* Dark green background with transparency */

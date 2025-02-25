@@ -3,76 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Metal Wire Sculptures</title>
+    <title>Metal by Mackenzie | Wire Sculptures</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Updated Google Fonts with better pairing -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Metal by Mackenzie</h1>
+        <div class="header-content">
+            <h1>Metal by Mackenzie</h1>
+            <p class="tagline">Handcrafted Wire Sculptures</p>
+        </div>
         <nav>
             <ul>
-                <!--<li><a href="#home">Home</a></li> --> 
-                <li><a href="#sculptures">Sculptures</a></li>
-                <li><a href="#biography">Biography</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#sculptures"><i class="fas fa-gem"></i> Gallery</a></li>
+                <li><a href="#biography"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Capturing Nature's Beauty in Wire</h2>
+            <p>Current works submitted for the Confluence of Art Annual</p>
+            <a href="#sculptures" class="btn">View Gallery</a>
+        </div>
+    </div>
+
     <main>
-        <section id="home">
-            <h2>Current Works</h2>
-            <p>Submissions for the Confluence of Art Annual</p>
-        </section>
-        <section id="sculptures">
-            <h2></h2>
+        <section id="sculptures" class="gallery">
+            <h2 class="section-title">Featured Works</h2>
+            
             <div class="sculpture">
                 <figure>
-                    <img src="images/lilyFinal1.jpg" alt="Sculpture 2 - Angle 1" onclick="window.open(this.src, '_blank')">
-                    <img src="images/lilyFinal2.jpg" alt="Sculpture 2 - Angle 2" onclick="window.open(this.src, '_blank')">
-                    <img src="images/lilyFinal3.jpg" alt="Sculpture 2 - Angle 3" onclick="window.open(this.src, '_blank')">
-                    <figcaption>Painted Lily: A wire sculpture using aluminum and steel, hand painted with acrylic paint, covered with a protective coating</figcaption>
+                    <div class="img-container">
+                        <img src="images/lilyFinal1.jpg" alt="Painted Lily - Front View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/lilyFinal2.jpg" alt="Painted Lily - Side View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/lilyFinal3.jpg" alt="Painted Lily - Detail View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Painted Lily</h3>
+                        <p>Aluminum and steel wire sculpture, hand painted with acrylic paint and finished with a protective coating</p>
+                    </figcaption>
                 </figure>
             </div>
+            
             <div class="sculpture">
                 <figure>
-                    <img src="images/deerFinal1.jpg" alt="Sculpture 1 - Angle 1" onclick="window.open(this.src, '_blank')">
-                    <img src="images/deerFinal2.jpg" alt="Sculpture 1 - Angle 2" onclick="window.open(this.src, '_blank')">
-                    <img src="images/deerFinal3.jpg" alt="Sculpture 1 - Angle 3" onclick="window.open(this.src, '_blank')">
-                    <figcaption>Steel Deer: A deer bust made of aluminum and steel wire</figcaption>
+                    <div class="img-container">
+                        <img src="images/deerFinal1.jpg" alt="Steel Deer - Front View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/deerFinal2.jpg" alt="Steel Deer - Side View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="images/deerFinal3.jpg" alt="Steel Deer - Detail View" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Steel Deer</h3>
+                        <p>A majestic deer bust crafted from aluminum and steel wire</p>
+                    </figcaption>
                 </figure>
             </div>
+            
             <div class="sculpture">
                 <figure class="violin">
-                    <img src="images/violinFinal.jpg" alt="Sculpture 3 - Angle 1" onclick="window.open(this.src, '_blank')">
-                    <figcaption>Wire Violin: A violin that is made from a single continuous piece of aluminum wire</figcaption>
+                    <div class="img-container violin-img">
+                        <img src="images/violinFinal.jpg" alt="Wire Violin" class="gallery-img">
+                        <div class="overlay">
+                            <span class="zoom-icon"><i class="fas fa-search-plus"></i></span>
+                        </div>
+                    </div>
+                    <figcaption>
+                        <h3>Wire Violin</h3>
+                        <p>A delicate violin sculpture created from a single continuous piece of aluminum wire</p>
+                    </figcaption>
                 </figure>
             </div>
         </section>
-        <section id="biography">
-            <h2>About the Artist</h2>
-            <p>
-                <br /><img src="images/bioPic.jpg" alt="biography picture" /> <br />
-                My name is Mackenzie, and I am an artist and software developer based in the city since 2019. Originally from Cumberland, Wisconsin, I was born in Eau Claire.
 
-                Although my formal education is in software development, I am a self-taught artist specializing in various metal mediums. Over the past few years, I have explored and honed my skills in working with chicken wire, wire jewelry, wire-wrapped stones, metal clay, and aluminum/steel wire sculpting.
-                Much of my work is inspired by nature, and I strive to capture its beauty and complexity in my sculptures.
-
-                With each piece, I aim to create unique and intricate works that reflect the natural world's elegance.
-            </p>
+        <section id="biography" class="about">
+            <h2 class="section-title">About the Artist</h2>
+            <div class="bio-content">
+                <div class="bio-image">
+                    <img src="images/bioPic.jpg" alt="Mackenzie Dubrow - Wire Sculptor" />
+                </div>
+                <div class="bio-text">
+                    <p>
+                        My name is Mackenzie, and I'm an artist and software developer based in the city since 2019. Originally from Cumberland, Wisconsin, I was born in Eau Claire.
+                    </p>
+                    <p>
+                        Although my formal education is in software development, I am a self-taught artist specializing in various metal mediums. Over the past few years, I have explored and honed my skills in working with chicken wire, wire jewelry, wire-wrapped stones, metal clay, and aluminum/steel wire sculpting.
+                    </p>
+                    <p>
+                        Much of my work is inspired by nature, and I strive to capture its beauty and complexity in my sculptures. With each piece, I aim to create unique and intricate works that reflect the natural world's elegance.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact:</h2>
-            <p>
-                E-mail: kenzb9595@gmail.com <br />
-                Phone: 715-419-0764
-            </p>
+
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>kenzb9595@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>715-419-0764</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Mackenzie Dubrow</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Mackenzie Dubrow | Metal Wire Sculptures</p>
+            <div class="social-links">
+                <!-- Add actual links to your social media profiles if available -->
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Etsy"><i class="fab fa-etsy"></i></a>
+            </div>
+        </div>
     </footer>
+
+    <!-- Add modal for image viewing -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // JavaScript for the image modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.gallery-img');
+            const modal = document.getElementById('image-modal');
+            const modalImg = document.getElementById('modal-img');
+            const caption = document.getElementById('caption');
+            const closeModal = document.querySelector('.close-modal');
+            
+            images.forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    caption.innerHTML = this.alt;
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
